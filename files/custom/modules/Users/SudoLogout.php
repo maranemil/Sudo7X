@@ -1,9 +1,9 @@
 <?php
-
+/*
 global $sudo_user;
 
 if(!empty($_SESSION['sudo_user']) && is_admin($_SESSION['sudo_user'])) {
-    global $current_user;
+	global $current_user;
 
     $user_focus = BeanFactory::getBean('Users');
     $user_focus->retrieve($_SESSION['sudo_user_id']);
@@ -17,3 +17,4 @@ if(!empty($_SESSION['sudo_user']) && is_admin($_SESSION['sudo_user'])) {
         header('Location: index.php?module=Users&action=ListView');
     }
 }
+*/

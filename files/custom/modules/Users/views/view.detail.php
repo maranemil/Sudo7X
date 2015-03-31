@@ -69,19 +69,16 @@ class UsersViewDetail extends ViewDetail {
                         LANGUAGE=javascript onclick='generatepwd(\"".$this->bean->id."\");' type='button' name='password' value='".translate('LBL_GENERATE_PASSWORD_BUTTON_LABEL','Users')."'>";
                     }
                 }
-                $buttons[] = "<input title='Masquerate' class='button'
-                    LANGUAGE=javascript onclick='parent.window.location.replace(\"index.php?module=Users&action=SudoLogin&record=".$_REQUEST["record"]."\");'
-                    type='button' name='Masquerate' value='".$mod_strings['LBL_LOGIN_AS']." ".$this->bean->name."'>";
+                $buttons[] = "<input title='SudoSwitch' class='button'
+                    LANGUAGE=javascript onclick='parent.window.location.replace(\"index.php?module=Users&action=SudoSwitch&record=".$_REQUEST["record"]."\");'
+                    type='button' name='SudoSwitch' value='".$mod_strings['LBL_LOGIN_AS']." ".$this->bean->name."'>";
             }
         }
 
-
-
-
         if(!empty($_SESSION['sudo_user'])) {
             $buttons[] = "<input title='Sudo' class='button'
-                    LANGUAGE=javascript onclick='window.location.replace(\"index.php?module=Users&action=SudoLogout&return_module=Home&return_action=index\");parent.window.location.replace(\"index.php?module=Home&action=index\");'
-                    type='button' name='SudoLogout' value='".$mod_strings['LBL_LOGOUT_AS']." ".$this->bean->name."'>";
+                    LANGUAGE=javascript onclick='window.location.replace(\"index.php?module=Users&action=SudoSwitch&return_module=Home&return_action=index\");parent.window.location.replace(\"index.php?module=Home&action=index\");'
+                    type='button' name='SudoSwitch' value='".$mod_strings['LBL_LOGOUT_AS']." ".$this->bean->name."'>";
         }
 
 
