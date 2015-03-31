@@ -9,7 +9,7 @@
  * @link http://www.maran-emil.de
  */
 
-
+// Reference Code:
 // https://gist.github.com/karlingen/5265c27ad78fb83fb774
 
 $manifest = array(
