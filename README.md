@@ -3,8 +3,9 @@ Sudo7X Login for Sugar ( minimal functionality which not involve yet REST API)
 
 # Installation
 1. Download zip package
-2. Upload through Admin > Module Loader
-3. Install
+2. Unzip and Repack (Zip) as Zip Format for Sugar (zip -r ../Pakckage.zip *) 
+3. Upload through Admin > Module Loader
+4. Install
 
 # Usage
 Simply goto desired user and click on "Login as {username}"
