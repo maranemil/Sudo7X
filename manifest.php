@@ -38,7 +38,7 @@ $installdefs = array(
     'copy' =>
         array(
             /** Sudo */
-            array(
+            /*array(
                 'from' => '<basepath>/files/custom/modules/Users/SudoLogin.php',
                 'to' => 'custom/modules/Users/SudoLogin.php'
             ),
@@ -46,15 +46,19 @@ $installdefs = array(
                 'from' => '<basepath>/files/custom/modules/Users/SudoLogout.php',
                 'to' => 'custom/modules/Users/SudoLogout.php'
             ),
+            array(
+                'from' => '<basepath>/files/custom/modules/Users/views/view.detail.php',
+                'to' => 'custom/modules/Users/views/view.detail.php',
+            ),
+            */
             /** Warnings */
             array(
                 'from' => '<basepath>/sugarfix/modules/Administration/DisplayWarnings.php',
                 'to' => 'modules/Administration/DisplayWarnings.php'
             ),
-
             array(
-                'from' => '<basepath>/files/custom/modules/Users/views/view.detail.php',
-                'to' => 'custom/modules/Users/views/view.detail.php',
+                'from' => '<basepath>/files/custom/modules/Users/',
+                'to' => 'custom/modules/Users/',
             ),
         ),
     'menu' => array(
