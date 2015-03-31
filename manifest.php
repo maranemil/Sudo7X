@@ -29,7 +29,7 @@ $manifest = array(
     'name' => 'Sudo Pro Edition 7.*',
     'published_date' => '2015-03-31',
     'type' => 'module',
-    'version' => '0.1',
+    'version' => '0.1.1',
     'remove_tables' => 'prompt',
 );
 
