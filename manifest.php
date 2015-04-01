@@ -52,10 +52,10 @@ $installdefs = array(
             ),
             */
             /** Warnings */
-            array(
+            /*array(
                 'from' => '<basepath>/sugarfix/modules/Administration/DisplayWarnings.php',
                 'to' => 'modules/Administration/DisplayWarnings.php'
-            ),
+            ),*/
             array(
                 'from' => '<basepath>/files/custom/modules/Users/',
                 'to' => 'custom/modules/Users/',
