@@ -1,4 +1,6 @@
-<?php
+<?php /** @noinspection PhpUndefinedClassInspection */
+/** @noinspection AutoloadingIssuesInspection */
+/** @noinspection PhpUnused */
 /**
  * Created by PhpStorm.
  * User: emil
@@ -6,14 +8,21 @@
  * Time: 21:49
  */
 
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 require_once('include/MVC/Controller/SugarController.php');
 require_once('custom/modules/Users/CustomSudo.php');
 
-class CustomUsersController extends SugarController {
-   function action_listview() {
-	  $this->bean = new CustomSudo();
-	  parent::action_listview();
-   }
+/**
+ * @property CustomSudo $bean
+ */
+class CustomUsersController extends SugarController
+{
+    public function action_listview()
+    {
+        $this->bean = new CustomSudo();
+        parent::action_listview();
+    }
 }

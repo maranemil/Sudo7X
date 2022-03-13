@@ -4,9 +4,9 @@
 // https://community.sugarcrm.com/sugarcrm/topics/login_as_another_user_possible
 
 global $current_user, $db;
-if (!$current_user->is_admin)
-   if (empty($_SESSION['was_admin']))
-	  die('Need to be administrator to access');
+if (!$current_user->is_admin && empty($_SESSION['was_admin'])) {
+    die('Need to be administrator to access');
+}
 if (!empty($_GET['user_id'])) {
    $_SESSION['user_id']               = $_GET['user_id'];
    $_SESSION['authenticated_user_id'] = $_GET['user_id'];
@@ -23,4 +23,3 @@ while ($row = $db->fetchByAssoc($resultset)) {
    echo '<a href="index.php?module=Administration&action=SwitchUser&user_id=' . $row['id'] . '"> ' . $row['user_name'] . '</a> ' . $row['first_name'] . ' ' . $row['last_name'] . ' <br/><br/>';
 }
 
-?>
